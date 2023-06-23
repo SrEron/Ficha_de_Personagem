@@ -32,12 +32,16 @@ void preencherfichaManu(int classe, int *dados) {
     }
     printf("\nArmor: ");
     scanf("%d", &armor);
+    fflush(stdin);
     printf("\nVida: ");
     scanf("%d", &vida);
+    fflush(stdin);
     printf("\nNivel: ");
     scanf("%d", &nivel);
+    fflush(stdin);
     printf("\nXP: ");
     scanf("%d", &xp);
+    fflush(stdin);
     //Caso o raça sejá Humana
     if (raca == 'Humana') {
       for (i = 0; i < 6; i++) {
@@ -65,12 +69,16 @@ void preencherfichaManu(int classe, int *dados) {
     }
     printf("\nArmor: ");
     scanf("%d", &armor);
+    fflush(stdin);
     printf("\nVida: ");
     scanf("%d", &vida);
+    fflush(stdin);
     printf("\nNivel: ");
     scanf("%d", &nivel);
+    fflush(stdin);
     printf("\nXP: ");
     scanf("%d", &xp);
+    fflush(stdin);
     
     if (raca == 'Humana') {
       for (i = 0; i < 6; i++) {
@@ -93,12 +101,16 @@ void preencherfichaManu(int classe, int *dados) {
     }
     printf("\nArmor: ");
     scanf("%d", &armor);
+    fflush(stdin);
     printf("\nVida: ");
     scanf("%d", &vida);
+    fflush(stdin);
     printf("\nNivel: ");
     scanf("%d", &nivel);
+    fflush(stdin);
     printf("\nXP: ");
     scanf("%d", &xp);
+    fflush(stdin);
     //Caso o raça sejá Humana
     if (strcmp(raca, "Humano") == 0) {
       for (i = 0; i < 6; i++) {
@@ -148,12 +160,16 @@ void preencherficharaut (int classe, int *dados){
 
     printf("\nArmor: ");
     scanf("%d", &armor);
+    fflush(stdin);
     printf("\nVida: ");
     scanf("%d", &vida);
+    fflush(stdin);
     printf("\nNivel: ");
     scanf("%d", &nivel);
+    fflush(stdin);
     printf("\nXP: ");
     scanf("%d", &xp);
+    fflush(stdin);
     //Caso o raça sejá Humana
     if (strcmp(raca, "Humano") == 0) {
       for (i = 0; i < 6; i++) {
@@ -182,12 +198,16 @@ void preencherficharaut (int classe, int *dados){
     }
     printf("\nArmor: ");
     scanf("%d", &armor);
+    fflush(stdin);
     printf("\nVida: ");
     scanf("%d", &vida);
+    fflush(stdin);
     printf("\nNivel: ");
     scanf("%d", &nivel);
+    fflush(stdin);
     printf("\nXP: ");
     scanf("%d", &xp);
+    fflush(stdin);
     
     if (strcmp(raca, "Humano") == 0) {
       for (i = 0; i < 6; i++) {
@@ -217,12 +237,16 @@ void preencherficharaut (int classe, int *dados){
     }
     printf("\nArmor: ");
     scanf("%d", &armor);
+    fflush(stdin);
     printf("\nVida: ");
     scanf("%d", &vida);
+    fflush(stdin);
     printf("\nNivel: ");
     scanf("%d", &nivel);
+    fflush(stdin);
     printf("\nXP: ");
     scanf("%d", &xp);
+    fflush(stdin);
     //Caso o raça sejá Humana
     if (strcmp(raca, "Humano") == 0) {
       for (i = 0; i < 6; i++) {
@@ -298,12 +322,14 @@ int main() {
             case 1:
                 printf("Escolha sua classe:\n(1) Guerreiro\n(2) Mago\n(3) Druida\n");
                 scanf("%d", &classe);
+                fflush(stdin);
                 preencherfichaManu(classe, dados);
                 break;
                 
             case 2:
                 printf("Escolha sua classe:\n(1) Guerreiro\n(2) Mago\n(3) Druida\n");
                 scanf("%d", &classe);
+                fflush(stdin);
                 preencherficharaut(classe, dados);
                 break;
                 
